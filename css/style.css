@@ -154,6 +154,7 @@ p {
   margin-right: 0px;
 }
 
+/* Tipo de letra de los encabezados/títulos */
 .titles{
   letter-spacing: 0.5cm;
   text-align: center;
@@ -165,6 +166,7 @@ p {
   margin-right: 0px;
 }
 
+/* Cuadrado donde va la descripcion de los videos en la pagina index.thml */
 .descripcion {
   background-color: coral;
   text-align: center;
@@ -173,16 +175,20 @@ p {
   border: 0px none black;
 }
 
+/* Letra del texto que describe a cada producto */
 .textprodu{
   font-size:medium;
 }
 
+/* Area y letra correspondiente a los sorteos */
 .sorteos{
   font-style: italic;
   margin-left: 100px;
   margin-bottom: 15px;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Flex del texto debajo de las fotos de los mas vendidos */
 .ranking{
   display: flex;
   align-content:flex-start;
@@ -192,6 +198,7 @@ p {
   padding: 0;
 }
 
+/* Flex del header */
 .flex__header{
   display: flex;
   flex-direction: row;
@@ -199,6 +206,7 @@ p {
   flex-wrap: wrap;
 }
 
+/* Flex de los iconos de las redes sociales */
 .flex__redes {
   display: flex;
   margin: 50px 0px 50px 0px;
@@ -206,16 +214,7 @@ p {
   justify-content: center;
 }
 
-#pie{
-  width: 95%;
-  height: 95%;
-}
-
-#pie:hover{
-  transform:scale(1.15);
-  transition-duration: 1s;
-}
-
+/* Flex con la orientacion y organizacion de los videos de youtube */
 .flex__videos{
   display: flex;
   flex-direction: row;
@@ -227,6 +226,7 @@ p {
   margin-top: 50px;
 }
 
+/* Flex de las caracteristicas de los productos de natura */
 .flex__caracte{
   display: flex;
   align-content: center;
@@ -235,6 +235,7 @@ p {
   margin-top: 50px;
 }
 
+/* Flex correspondiente a los sectores de las descripciones de quien.html */
 .flex__soyyo{
   display: flex;
   flex-wrap: wrap;
@@ -249,6 +250,7 @@ p {
   background-color:blanchedalmond;
 }
 
+/* Flex correspondiente al sector de presentacion de prodcutos de las descripciones de quien.html */
 .flex__presenta{
   display: flex;
   flex-wrap: wrap;
@@ -263,6 +265,7 @@ p {
   background-color:blanchedalmond;
 }
 
+/* Flex correspondiente al sector capacitacion de las descripciones de quien.html */
 .flex__capa{
   display: flex;
   flex-wrap: wrap;
@@ -277,6 +280,7 @@ p {
   background-color:blanchedalmond;
 }
 
+/* Flex correspondiente al sector de las fechas de sorteo */
 .flex__fechasorteo{
   display: flex;
   justify-content: center;
@@ -290,6 +294,7 @@ p {
   background-color:blanchedalmond;
 }
 
+/* Flex correspondiente a los medios de contacto */
 .flex__medio{
   display: flex;
   justify-content: left;
@@ -301,6 +306,7 @@ p {
   padding-left: 0px;
   margin-top: 50px;
 }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 .linknatura{
   font-size: 14px;
@@ -345,6 +351,18 @@ p {
   margin-bottom: 20px;
 }
 
+#pie:hover{
+  transform:scale(1.15);
+  transition-duration: 1s;
+}
+
+#pie{
+  width: 95%;
+  height: 95%;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .grid__videos{
   grid-area: grid__videos;
   display: grid;
@@ -407,8 +425,7 @@ p {
   margin: 25px 0px 25px;
   text-align: center;
 }
-
-
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR GRIDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*MODO TABLET!!!!!!!!!*/
 @media (min-width: 501px){ /*MODO TABLET!!!!!!!!!*/
