@@ -10,16 +10,7 @@ a {
   text-decoration: none;
 }
 
-body{
-  text-align: left;
-  font-family: Quicksand;
-  font-weight: bolder;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 499px;
-}
-
+/* >>>>>>>>>>>>>>>>> CONFIGURACION DEL HEADER Y NAV >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 header {
   background: rgba(255, 255, 255);
   width: 100%;
@@ -60,8 +51,6 @@ ul li p{
   font-weight: 500;
   font-size:large;
   font-style: italic;
-  /* margin-left: 20px;
-  margin-right: 20px; */
   list-style-type:none;
   text-align: left;
 }
@@ -72,7 +61,8 @@ ul li{
 
 ul li p a{
   font-size:larger;
-} 
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<  CONFIGURACION DEL HEADER Y NAV <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 p {
   font-family: Manrope;
@@ -82,6 +72,7 @@ p {
   margin-right: 0px;
 }
 
+/* Ajusto el tamaño del video de Youtube al dispositivo */
 .videoyoutube{
   width: 500px;
   height: 280px;
@@ -198,6 +189,17 @@ p {
   padding: 0;
 }
 
+/* Flex del body */
+body{
+  text-align: left;
+  font-family: Quicksand;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 499px;
+}
+
 /* Flex del header */
 .flex__header{
   display: flex;
@@ -306,24 +308,8 @@ p {
   padding-left: 0px;
   margin-top: 50px;
 }
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-.linknatura{
-  font-size: 14px;
-}
-
-.fotopubli{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.produ:hover{
-  transform:scale(1.07);
-  transition-property: all;
-  transition-duration: 1s;
-}
-
+/* Flex del sector de la Descripcion de las publicaciones */
 .descpubli{
   display: flex;
   flex-direction: column;
@@ -334,12 +320,32 @@ p {
   padding-right: 0;
 }
 
+/* Flex de los pie de fotos, es la descripcion que va debajo de cada foto de producto*/
 .piefoto{
   display: flex;
   flex-direction:row;
   flex-wrap: nowrap;
   align-items:flex-end;
   justify-content: center;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
+.linknatura{
+  font-size: 14px;
+}
+
+.fotopubli{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Aplico un efecto para que al pasar el cursor sobre la foto esta se agrande un poco */
+.produ:hover{
+  transform:scale(1.07);
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .titupremio{
@@ -427,6 +433,7 @@ p {
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR GRIDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+/* --------------------------------------------------------------------------------------------------------------- */
 /*MODO TABLET!!!!!!!!!*/
 @media (min-width: 501px){ /*MODO TABLET!!!!!!!!!*/
   /*MODO TABLET!!!!!!!!!*/
@@ -444,6 +451,7 @@ p {
     font-weight: 600;
   }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   body{
     text-align: center;
     font-family: Quicksand;
@@ -454,12 +462,6 @@ p {
     width: auto;
   }
 
-.imglogo{
-  width: auto;
-  align-items:stretch;
-  text-align:right;
-}
-
   .listfotos{
     display: flex;
     flex-direction:row;
@@ -468,10 +470,41 @@ p {
     justify-content: space-around;
   }
 
-  .linknatura{
-    font-size:large;
+  .flex__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
+    /* Flex correspondiente al sector de las fechas de sorteo */
+.flex__fechasorteo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 2px solid orangered;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color:blanchedalmond;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.imglogo{
+  width: auto;
+  align-items:stretch;
+  text-align:right;
+}
+
+/* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
+.linknatura{
+    font-size:large;
+}
+
+  /* Ajusto el tamaño del video de Youtube al dispositivo */
   .videoyoutube{
     width: 560px;
     height: 315px;
@@ -491,7 +524,7 @@ p {
     width: 60%;
     height: 60%;
   }
-  
+
   .fotolanzasecun {
     padding: 0px;
     border: 5px ridge orangered;
@@ -500,13 +533,7 @@ p {
     height: 60%;
   }
 
-  .flex__header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   .grid__videos{
     grid-area: grid__videos;
     display: grid;
@@ -535,33 +562,35 @@ p {
     flex-wrap: wrap;
     padding-left: 20px;
   }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR GRIDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 }
 
+/* --------------------------------------------------------------------------------------------------------------- */
 /*MODO DESKTOP!!!!!!!!!*/
 @media (min-width:769px){ /*MODO DESKTOP!!!!!!!!!*/
 /*MODO DESKTOP!!!!!!!!!*/
   body {
     background-color: white;
   }
-  
+
   nav {
     float: left;
   }
-  
+
   nav ul li {
     float: left;
     font-family: Quicksand;
     font-size: 20px;
     font-weight: 600;
   }
-  
+
   nav ul li a {
     display: inline-block;
     padding: 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
   }
-  
+
   p {
     font-family: Manrope;
     font-weight: 500;
@@ -569,14 +598,14 @@ p {
     margin-left: 0px;
     margin-right: 0px;
   }
-  
+
   #bannerppal{
     margin-top: 150px;
     width: 1349px;
     height: auto;
     margin-bottom: 5px;
   }
-  
+
   .fotolanzamiento {
     padding: 0px;
     border: 5px ridge orangered;
@@ -584,7 +613,7 @@ p {
     width: auto;
     height: auto;
   }
-  
+
   .fotolanzasecun {
     padding: 0px;
     border: 5px ridge orangered;
@@ -592,7 +621,7 @@ p {
     width: auto;
     height: auto;
   }
-  
+
   .descripcion {
     background-color: coral;
     text-align: center;
@@ -600,13 +629,14 @@ p {
     margin: 0px 0px 0px 0px;
     border: 0px none black;
   }
-  
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   .flex__header{
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  
+
   .flex__soyyo{
     display: flex;
     justify-content: center;
@@ -620,7 +650,7 @@ p {
     background-color:blanchedalmond;
     flex-wrap: nowrap;
   }
-  
+
   .flex__presenta{
     display: flex;
     justify-content: center;
@@ -634,7 +664,7 @@ p {
     background-color:blanchedalmond;
     flex-wrap: nowrap;
   }
-  
+
   .flex__capa{
     display: flex;
     justify-content: center;
@@ -664,22 +694,33 @@ p {
   background-color:blanchedalmond;
 }
 
+.listfotos{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.flex__caracte{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
   #pie{
   width: 75%;
   height: 75%;
 }
-  
+
+/* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
 .linknatura{
   font-size:large;
 }
   
-  .listfotos{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-  
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   .grid__videos{
     grid-area: grid__videos;
     display: grid;
@@ -691,7 +732,7 @@ p {
     grid-template-rows: 315px;
     align-items:stretch;
   }
-  
+
   .grid__contactame{
     display: grid;
     grid-template-columns: 15px 3fr 1fr 3fr 1fr;
@@ -705,7 +746,7 @@ p {
     background-color:white;
     flex-wrap: wrap;
   }
-  
+
   .grid__pripre{
     display: grid;
     grid-template-columns: 5px 2fr 2fr 2fr 4fr 5px;
@@ -718,7 +759,7 @@ p {
     background-color:blanchedalmond;
     margin-bottom: 50px;
   }
-  
+
   .ppal{
     grid-area: ppal;
     width: 100px;
@@ -728,20 +769,20 @@ p {
     margin-left: 75px;
     margin-top: 50px;
   }
-  
+
   .superior{
     grid-area: superior;
     width: 100%;
     height: 2fr;
     margin: 25px 0px 25px;
   }
-  
+
   .inferior{
     grid-area: inferior;
     width: 100%;
     margin: 15px 0px 25px;
   }
-  
+
   .proxciclo{
     display: grid;
     width: 100%;
@@ -751,13 +792,6 @@ p {
     "ppal   inferior";
     justify-content:space-around;
   }
-
-  .flex__caracte{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR GRIDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 }
