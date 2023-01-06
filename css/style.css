@@ -74,7 +74,7 @@ p {
 
 /* Ajusto el tamaño del video de Youtube al dispositivo */
 .videoyoutube{
-  width: 400px;
+  width: 475px;
   height: 280px;
 }
 
@@ -168,13 +168,14 @@ p {
 }
 
 /* Cuadrado donde va la descripcion de los videos en la pagina index.thml */
-.descripcion {
+.descripcionvideo {
   background-color: coral;
   text-align: center;
   padding: 15px 0px 15px 0px;
   margin: 0px 0px 0px 0px;
   border: 0px none black;
 }
+
 
 /* Letra del texto que describe a cada producto */
 .textprodu{
@@ -355,8 +356,6 @@ body{
   font-size: 14px;
 }
 
-
-
 /* Aplico un efecto para que al pasar el cursor sobre la foto esta se agrande un poco */
 .produ:hover{
   transform:scale(1.07);
@@ -384,20 +383,6 @@ body{
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.grid__videos{
-  grid-area: grid__videos;
-  display: grid;
-  grid-template-columns:500px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  margin-left: 0px;
-  margin-right: 0px;
-  grid-template-rows: 15px;
-  text-align: center;
-  align-items:flex-end;
-  justify-content: stretch;
-}
-
 .grid__contactame{
   display: grid;
   grid-template-columns: 10fr;
@@ -476,6 +461,14 @@ body{
     color: black;
   }
 
+  .descripcionvideo {
+    background-color: coral;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin: 15px 0px 0px 0px;
+    border: 0px none black;
+  }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   body{
     text-align: center;
@@ -538,20 +531,13 @@ body{
 
   /* Ajusto el tamaño del video de Youtube al dispositivo */
   .videoyoutube{
-    width: 560px;
-    height: 315px;
+    width: 695px;
+    height: 350px;
   }
 
   .ganadores{
     font-size:x-large;
     color: black;
-  }
-
-  .descripcion {
-    background-color: coral;
-    text-align: center;
-    margin: 0px 0px 0px 0px;
-    border: 0px none black;
   }
 
   .fotolanzamiento {
@@ -636,17 +622,16 @@ body{
     margin-right: 0px;
   }
 
-  #bannerppal{
-    margin-top: 150px;
-    width: 1349px;
-    height: auto;
-    margin-bottom: 5px;
-  }
-
   .logotipo{
     width: 475px;
     height: 129px;
   }
+
+    /* Ajusto el tamaño del video de Youtube al dispositivo */
+    .videoyoutube{
+      width: 560px;
+      height: 315px;
+    }
 
   .fotolanzamiento {
     padding: 0px;
@@ -664,10 +649,11 @@ body{
     height: auto;
   }
 
-  .descripcion {
+  .descripcionvideo {
     background-color: coral;
     text-align: center;
-    padding: 141px;
+    padding-top: 144px;
+    padding-bottom: 144px;
     margin: 0px 0px 0px 0px;
     border: 0px none black;
   }
