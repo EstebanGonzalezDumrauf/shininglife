@@ -78,6 +78,11 @@ p {
   height: 280px;
 }
 
+.logotipo{
+  width: 356px; /*475px;*/
+  height: 97px; /*129px;*/
+}
+
 #bannerppal{
   margin-top: 10px;
   width: 0px;
@@ -367,7 +372,6 @@ body{
   height: 95%;
 }
 
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .grid__videos{
   grid-area: grid__videos;
@@ -449,6 +453,11 @@ body{
     font-family: Quicksand;
     font-size: 25px;
     font-weight: 600;
+  }
+
+  .logotipo{
+    width: 475px;
+    height: 129px;
   }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -604,6 +613,11 @@ body{
     width: 1349px;
     height: auto;
     margin-bottom: 5px;
+  }
+
+  .logotipo{
+    width: 475px;
+    height: 129px;
   }
 
   .fotolanzamiento {
