@@ -74,7 +74,7 @@ p {
 
 /* Ajusto el tamaño del video de Youtube al dispositivo */
 .videoyoutube{
-  width: 500px;
+  width: 400px;
   height: 280px;
 }
 
@@ -83,10 +83,8 @@ p {
   height: 97px; /*129px;*/
 }
 
-#bannerppal{
+.carousel-slide{
   margin-top: 10px;
-  width: 0px;
-  height: 0px;
   margin-bottom: 175px;
 }
 
@@ -148,11 +146,13 @@ p {
 
 .lineaonline{
   text-align: center;
+  align-content: center;
   background: linear-gradient(to left, orangered, pink);
   margin-bottom: 15px;
   font-size:small;
   margin-left: 0px;
   margin-right: 0px;
+  padding-top: 10px;
 }
 
 /* Tipo de letra de los encabezados/títulos */
