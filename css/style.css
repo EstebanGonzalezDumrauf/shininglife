@@ -25,7 +25,7 @@ nav {
 nav ul {
   list-style: none;
   overflow: hidden;
-  align-items:baseline;
+  align-items:center;
 }
 
 nav ul li {
@@ -131,6 +131,11 @@ p {
 
 .boxdescprodu{
   width: 5px;
+}
+
+.ganadores{
+  font-size:medium;
+  color: black;
 }
 
 .tipos{
@@ -298,6 +303,7 @@ body{
   margin-bottom: 50px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-top: 20px;
   background-color:blanchedalmond;
 }
 
@@ -333,6 +339,15 @@ body{
   align-items:flex-end;
   justify-content: center;
 }
+
+.fotopubli{
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 /* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
@@ -340,11 +355,7 @@ body{
   font-size: 14px;
 }
 
-.fotopubli{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+
 
 /* Aplico un efecto para que al pasar el cursor sobre la foto esta se agrande un poco */
 .produ:hover{
@@ -460,6 +471,11 @@ body{
     height: 129px;
   }
 
+  .ganadores{
+    font-size:larger;
+    color: black;
+  }
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   body{
     text-align: center;
@@ -500,6 +516,13 @@ body{
   padding-left: 50px;
   background-color:blanchedalmond;
 }
+
+.fotopubli{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 .imglogo{
@@ -517,6 +540,11 @@ body{
   .videoyoutube{
     width: 560px;
     height: 315px;
+  }
+
+  .ganadores{
+    font-size:x-large;
+    color: black;
   }
 
   .descripcion {
