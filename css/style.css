@@ -88,6 +88,11 @@ p {
   margin-bottom: 175px;
 }
 
+.direconta{
+  font-size: large;
+  color: rgb(0, 0, 0);
+}
+
 .produ {
   margin: 15px 37px 5px 37px;
   padding: 0px;
@@ -388,13 +393,14 @@ body{
   grid-template-columns: 10fr;
   grid-template-rows: 5px;
   background: linear-gradient(to left, orange, white);
-  justify-content:start;
+  justify-content:space-around;
   align-content: center;
   align-items: center;
   border: 2px solid orangered;
   text-align: center;
   background-color:white;
   flex-wrap: wrap;
+  padding-left: 5px;
 }
 
 .grid__pripre{
@@ -576,7 +582,7 @@ body{
     grid-template-columns: 10fr;
     grid-template-rows: 5px;
     background: linear-gradient(to left, orange, white);
-    justify-content:start;
+    justify-content:space-around;
     align-content: center;
     align-items: center;
     border: 2px solid orangered;
@@ -766,7 +772,7 @@ body{
     grid-template-columns: 15px 3fr 1fr 3fr 1fr;
     grid-template-rows: 350px;
     background: linear-gradient(to left, orange, white);
-    justify-content:center;
+    justify-content:space-around;
     align-content: center;
     align-items: center;
     border: 2px solid orangered;
