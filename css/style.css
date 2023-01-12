@@ -74,13 +74,13 @@ p {
 
 /* Ajusto el tamaño del video de Youtube al dispositivo */
 .videoyoutube{
-  width: 475px;
-  height: 280px;
+  width: 340px;/*475px;*/
+  height: 200px; /*280px;*/
 }
 
 .logotipo{
-  width: 356px; /*475px;*/
-  height: 97px; /*129px;*/
+  width: 237px; /*475px;*/
+  height: 65px; /*129px;*/
 }
 
 .carousel-slide{
@@ -91,6 +91,7 @@ p {
 .direconta{
   font-size: large;
   color: rgb(0, 0, 0);
+  margin-left: 5px;
 }
 
 .produ {
@@ -162,7 +163,7 @@ p {
 
 /* Tipo de letra de los encabezados/títulos */
 .titles{
-  letter-spacing: 0.5cm;
+  letter-spacing: 0.3cm;
   text-align: center;
   background-color:rgb(236, 185, 136);
   margin-top: 15px;
@@ -174,7 +175,7 @@ p {
 
 /* Cuadrado donde va la descripcion de los videos en la pagina index.thml */
 .descripcionvideo {
-  background-color: coral;
+  background-color: white;
   text-align: center;
   padding: 15px 0px 15px 0px;
   margin: 0px 0px 0px 0px;
@@ -213,7 +214,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 499px;
+  width: 360px;
 }
 
 /* Flex del header */
@@ -316,13 +317,13 @@ body{
 /* Flex correspondiente a los medios de contacto */
 .flex__medio{
   display: flex;
-  justify-content: left;
+  justify-content:flex-start;
   align-content:center;
   align-items:center;
-  text-align:left;
+  text-align:center;
   margin-bottom: 50px;
-  padding-right: 50px;
-  padding-left: 0px;
+  padding-right: 0px;
+  padding-left: 80px;
   margin-top: 50px;
 }
 
@@ -358,7 +359,7 @@ body{
 
 /* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
 .linknatura{
-  font-size: 14px;
+  font-size: 2%;
 }
 
 /* Aplico un efecto para que al pasar el cursor sobre la foto esta se agrande un poco */
@@ -390,7 +391,7 @@ body{
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .grid__contactame{
   display: grid;
-  grid-template-columns: 10fr;
+  grid-template-columns: 2fr;
   grid-template-rows: 5px;
   background: linear-gradient(to left, orange, white);
   justify-content:space-around;
@@ -466,6 +467,11 @@ body{
     font-size:larger;
     color: black;
   }
+
+  /* Tipo de letra de los encabezados/títulos */
+.titles{
+  letter-spacing: 0.5cm;
+}
 
   .descripcionvideo {
     background-color: coral;
@@ -546,6 +552,12 @@ body{
     color: black;
   }
 
+  .direconta{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+  }
+
   .fotolanzamiento {
     padding: 0px;
     border: 5px ridge orangered;
@@ -596,7 +608,7 @@ body{
 
 /* --------------------------------------------------------------------------------------------------------------- */
 /*MODO DESKTOP!!!!!!!!!*/
-@media (min-width:769px){ /*MODO DESKTOP!!!!!!!!!*/
+@media (min-width:1024px){ /*MODO DESKTOP!!!!!!!!!*/
 /*MODO DESKTOP!!!!!!!!!*/
   body {
     background-color: white;
@@ -638,6 +650,11 @@ body{
       width: 560px;
       height: 315px;
     }
+
+      /* Tipo de letra de los encabezados/títulos */
+.titles{
+  letter-spacing: 0.5cm;
+}
 
   .fotolanzamiento {
     padding: 0px;
