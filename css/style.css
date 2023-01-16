@@ -83,6 +83,13 @@ p {
   height: 65px; /*129px;*/
 }
 
+.btn-primary{
+  background-color: coral;
+  border-color: brown;
+  color: black;
+  font-weight: bold;
+}
+
 .carousel-slide{
   margin-top: 10px;
   margin-bottom: 175px;
@@ -215,6 +222,7 @@ body{
   flex-direction: column;
   min-height: 100vh;
   width: 360px;
+  align-content: center;
 }
 
 /* Flex del header */
@@ -575,20 +583,6 @@ body{
   }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  .grid__videos{
-    grid-area: grid__videos;
-    display: grid;
-    grid-template-columns:560px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
-    grid-template-rows: 15px;
-    text-align: center;
-    align-items:flex-end;
-    justify-content: center;
-  }
-
   .grid__contactame{
     display: grid;
     grid-template-columns: 10fr;
@@ -677,8 +671,13 @@ body{
     text-align: center;
     padding-top: 144px;
     padding-bottom: 144px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0px 0px 0px 0px;
     border: 0px none black;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content:left;
   }
 
   /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -772,18 +771,6 @@ body{
 }
   
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  .grid__videos{
-    grid-area: grid__videos;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    grid-template-rows: 315px;
-    align-items:stretch;
-  }
-
   .grid__contactame{
     display: grid;
     grid-template-columns: 15px 3fr 1fr 3fr 1fr;
