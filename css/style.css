@@ -335,16 +335,16 @@ body{
 }
 
 /* Flex correspondiente a los medios de contacto */
-.flex__medio{
+.flex__enlace{
   display: flex;
   justify-content:flex-start;
   align-content:center;
   align-items:center;
   text-align:center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding-right: 0px;
-  padding-left: 80px;
-  margin-top: 50px;
+  padding-left: 0px;
+  margin-top: 10px;
 }
 
 /* Flex del sector de la Descripcion de las publicaciones */
