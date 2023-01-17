@@ -90,6 +90,13 @@ p {
   font-weight: bold;
 }
 
+.btn-primary:hover{
+  background-color:palegreen;
+  border-color:crimson;
+  color: black;
+  font-weight: bold;
+}
+
 .carousel-slide{
   margin-top: 10px;
   margin-bottom: 175px;
@@ -170,7 +177,7 @@ p {
 
 /* Tipo de letra de los encabezados/títulos */
 .titles{
-  letter-spacing: 0.3cm;
+  letter-spacing: 0.2cm;
   text-align: center;
   background-color:rgb(236, 185, 136);
   margin-top: 15px;
@@ -271,6 +278,7 @@ body{
   align-items:center;
   border: 2px solid orangered;
   text-align: center;
+  padding-top: 15px;
   margin-bottom: 50px;
   padding-right: 50px;
   padding-left: 50px;
@@ -287,6 +295,7 @@ body{
   border: 2px solid orangered;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
   background-color:blanchedalmond;
@@ -302,6 +311,7 @@ body{
   border: 2px solid orangered;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
   background-color:blanchedalmond;
@@ -694,6 +704,7 @@ body{
     align-items:center;
     border: 2px solid orangered;
     text-align: center;
+    padding-top: 0px;
     margin-bottom: 50px;
     padding-right: 50px;
     padding-left: 50px;
@@ -709,6 +720,7 @@ body{
     border: 2px solid orangered;
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 0px;
     padding-right: 10px;
     padding-left: 10px;
     background-color:blanchedalmond;
@@ -723,6 +735,7 @@ body{
     border: 2px solid orangered;
     text-align: center;
     margin-bottom: 50px;
+    padding-top: 0px;
     padding-right: 10px;
     padding-left: 10px;
     background-color:blanchedalmond;
