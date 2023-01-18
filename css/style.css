@@ -229,14 +229,17 @@ p {
 
 /* Flex del body */
 body{
-  text-align: left;
+  text-align: center;
   font-family: Quicksand;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  width: 360px;
+  /* min-height: 100vh;
+  width: 360px; */
   align-content: center;
+  min-height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 /* Flex del header */
@@ -514,7 +517,9 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: auto;
+    /* width: auto; */
+    max-width: 1023px;
+    margin: 0 auto;
   }
 
   .listfotos{
@@ -627,6 +632,9 @@ body{
 /*MODO DESKTOP!!!!!!!!!*/
   body {
     background-color: white;
+        /* width: auto; */
+        max-width: 1920px;
+        margin: 0 auto;
   }
 
   nav {
