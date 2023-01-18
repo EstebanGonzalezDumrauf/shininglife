@@ -102,6 +102,11 @@ p {
   margin-bottom: 175px;
 }
 
+.tachado{
+  text-decoration:line-through;
+  color: dimgray;
+}
+
 .direconta{
   font-size: large;
   color: rgb(0, 0, 0);
