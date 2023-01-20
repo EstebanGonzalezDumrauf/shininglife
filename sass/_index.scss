@@ -1,0 +1,71 @@
+/* Ajusto el tamaño del video de Youtube al dispositivo */
+.videoyoutube {
+    width: 340px;
+    /*475px;*/
+    height: 200px;
+    /*280px;*/
+}
+
+/*Foto de proximo ciclo*/
+.fotolanzamiento {
+    padding: 0px;
+    border: 5px ridge coral;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    width: 75%;
+    height: 75%;
+}
+
+/*Fotos secundarias de proximo ciclo*/
+.fotolanzasecun {
+    padding: 0px;
+    border: 5px ridge coral;
+    border-radius: 10%;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    width: 75%;
+    height: 75%;
+}
+
+/* Cuadrado donde va la descripcion de los videos en la pagina index.thml */
+.descripcionvideo {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px none black;
+}
+
+/* FLEX del texto debajo de las fotos de los mas vendidos */
+.ranking {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+/*Grilla de los adelantos de proximo ciclo*/
+.ppal {
+    grid-area: ppal;
+    width: 100%;
+    margin: 25px 0px 25px;
+    text-align: center;
+}
+
+/*Grilla de los adelantos de proximo ciclo lateral superior*/
+.superior {
+    grid-area: superior;
+    width: 100%;
+    height: 2fr;
+    margin: 25px 0px 25px;
+    text-align: center;
+}
+
+/*Grilla de los adelantos de proximo ciclo lateral inferior*/
+.inferior {
+    grid-area: inferior;
+    width: 100%;
+    margin: 25px 0px 25px;
+    text-align: center;
+}

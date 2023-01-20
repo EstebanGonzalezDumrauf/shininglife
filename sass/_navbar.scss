@@ -1,0 +1,60 @@
+header {
+    background: rgba(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    float: none;
+
+    ul {
+        list-style: none;
+        overflow: hidden;
+        align-items: center;
+
+        li {
+            float: left;
+            font-family: Quicksand;
+            font-size: 15px;
+            font-weight: 600;
+
+            a {
+                display: inline-block;
+                padding: 6px;
+                color: $colorletranavbar;
+                text-decoration: none;
+            }
+        }    
+        
+        li:hover {
+            background: $colornavbar;
+        }
+    }
+}
+
+ul {
+
+    li {
+        list-style-type: none;
+
+        p {
+            font-family: Manrope;
+            font-weight: 500;
+            font-size: large;
+            font-style: italic;
+            list-style-type: none;
+            text-align: left;
+
+            a {
+                font-size: larger;
+            }
+        }
+    }
+}
+
+/*Dimensiones del logo de la navbar*/
+.logotipo {
+    width: 237px;
+    height: 65px;
+}

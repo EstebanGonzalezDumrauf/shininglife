@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Quicksand:wght@300;400&display=swap');
+
+* {
+    /*MODO CELULAR!!!!!!!!!*/
+    /*MODO CELULAR!!!!!!!!!*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: medium;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*Configuracion de las fotos de productos*/
+.produ {
+    margin: 15px 37px 5px 37px;
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 3%;
+    box-shadow: 0px 0px 15px 0px grey;
+}
+
+/* Aplico un efecto para que al pasar el cursor sobre la foto esta se agrande un poco */
+.produ:hover {
+    transform: scale(1.07);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.boxdescprodu {
+    width: 5px;
+}
+
+/* Verificar y comparar con titles*/
+.tipos {
+    letter-spacing: 0.5cm;
+    text-align: center;
+    background-color: rgb(236, 185, 136);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Tipo de letra de los encabezados/títulos */
+.titles {
+    letter-spacing: 0.2cm;
+    text-align: center;
+    background-color: rgb(236, 185, 136);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: larger;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Linea de comentarios debajo del banner con info adicional como cuotas, medios de pago, etc*/
+.lineaonline {
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to left, orangered, pink);
+    margin-bottom: 15px;
+    font-size: small;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+}
+
+/* Letra del texto que describe a cada producto */
+.textprodu {
+    font-size: medium;
+}
+
+/*Animación del hover sobre las caracteristicas de los productos*/
+#pie:hover {
+    transform: scale(1.15);
+    transition-duration: 1s;
+}
+
+/*Tamaño de la imagen con las caracteristicas de los productos*/
+#pie {
+    width: 95%;
+    height: 95%;
+}
+
+/* FLEX del body */
+body {
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-height: 100vh;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* FLEX del header */
+.flex__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* FLEX de los iconos de las redes sociales en el footer*/
+.flex__redes {
+    display: flex;
+    margin: 50px 0px 50px 0px;
+    align-content: center;
+    justify-content: center;
+}
+
+/* FLEX de las caracteristicas de los productos de natura */
+.flex__caracte {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* FLEX del sector de la Descripcion de las publicaciones */
+.descpubli {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: -2;
+    margin-right: -2;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* FLEX de los pie de fotos, es la descripcion que va debajo de cada foto de producto*/
+.piefoto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* FLEX de los pie de fotos, es la descripcion que va debajo de cada foto de producto*/
+/*CREO QUE NO FUNCIONA*/
+.fotopubli {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
