@@ -18,6 +18,15 @@ p {
   margin-left: 0px;
   margin-right: 0px;
 }
+@media (min-width: 1024px) {
+  p {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: large;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 
 /*Configuracion de las fotos de productos*/
 .produ {
@@ -59,6 +68,16 @@ p {
   margin-left: 0px;
   margin-right: 0px;
 }
+@media (min-width: 501px) {
+  .titles {
+    letter-spacing: 0.5cm;
+  }
+}
+@media (min-width: 1024px) {
+  .titles {
+    letter-spacing: 0.5cm;
+  }
+}
 
 /* Linea de comentarios debajo del banner con info adicional como cuotas, medios de pago, etc*/
 .lineaonline {
@@ -88,6 +107,12 @@ p {
   width: 95%;
   height: 95%;
 }
+@media (min-width: 1024px) {
+  #pie {
+    width: 75%;
+    height: 75%;
+  }
+}
 
 /* FLEX del body */
 body {
@@ -101,6 +126,25 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
+@media (min-width: 501px) {
+  body {
+    text-align: center;
+    font-family: Quicksand;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: white;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
 
 /* FLEX del header */
 .flex__header {
@@ -108,6 +152,13 @@ body {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  .flex__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /* FLEX de los iconos de las redes sociales en el footer*/
@@ -125,6 +176,15 @@ body {
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+@media (min-width: 1024px) {
+  .flex__caracte {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 }
 
 /* FLEX del sector de la Descripcion de las publicaciones */
@@ -157,6 +217,13 @@ body {
   align-items: center;
   margin-left: 15px;
 }
+@media (min-width: 501px) {
+  .fotopubli {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 header {
   background: rgb(255, 255, 255);
@@ -168,10 +235,22 @@ header {
 nav {
   float: none;
 }
+@media (min-width: 1024px) {
+  nav {
+    float: left;
+  }
+}
 nav ul {
   list-style: none;
   overflow: hidden;
   align-items: center;
+}
+@media (min-width: 501px) {
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    align-items: center;
+  }
 }
 nav ul li {
   float: left;
@@ -179,11 +258,35 @@ nav ul li {
   font-size: 15px;
   font-weight: 600;
 }
+@media (min-width: 501px) {
+  nav ul li {
+    float: left;
+    font-family: Quicksand;
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    float: left;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 nav ul li a {
   display: inline-block;
   padding: 6px;
   color: black;
   text-decoration: none;
+}
+@media (min-width: 1024px) {
+  nav ul li a {
+    display: inline-block;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
 }
 nav ul li:hover {
   background: orange;
@@ -209,6 +312,18 @@ ul li p a {
   width: 237px;
   height: 65px;
 }
+@media (min-width: 501px) {
+  .logotipo {
+    width: 475px;
+    height: 129px;
+  }
+}
+@media (min-width: 1024px) {
+  .logotipo {
+    width: 475px;
+    height: 129px;
+  }
+}
 
 /* Ajusto el tamaño del video de Youtube al dispositivo */
 .videoyoutube {
@@ -216,6 +331,18 @@ ul li p a {
   /*475px;*/
   height: 200px;
   /*280px;*/
+}
+@media (min-width: 501px) {
+  .videoyoutube {
+    width: 695px;
+    height: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .videoyoutube {
+    width: 560px;
+    height: 315px;
+  }
 }
 
 /*Foto de proximo ciclo*/
@@ -227,6 +354,24 @@ ul li p a {
   width: 75%;
   height: 75%;
 }
+@media (min-width: 501px) {
+  .fotolanzamiento {
+    padding: 0px;
+    border: 5px ridge coral;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .fotolanzamiento {
+    padding: 0px;
+    border: 5px ridge orangered;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    width: auto;
+    height: auto;
+  }
+}
 
 /*Fotos secundarias de proximo ciclo*/
 .fotolanzasecun {
@@ -237,6 +382,24 @@ ul li p a {
   width: 75%;
   height: 75%;
 }
+@media (min-width: 501px) {
+  .fotolanzasecun {
+    padding: 0px;
+    border: 5px ridge coral;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .fotolanzasecun {
+    padding: 0px;
+    border: 5px ridge orangered;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    width: auto;
+    height: auto;
+  }
+}
 
 /* Cuadrado donde va la descripcion de los videos en la pagina index.thml */
 .descripcionvideo {
@@ -245,6 +408,30 @@ ul li p a {
   padding: 15px 0px 15px 0px;
   margin: 0px 0px 0px 0px;
   border: 0px none black;
+}
+@media (min-width: 501px) {
+  .descripcionvideo {
+    background-color: coral;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin: 15px 0px 0px 0px;
+    border: 0px none black;
+  }
+}
+@media (min-width: 1024px) {
+  .descripcionvideo {
+    background-color: coral;
+    text-align: center;
+    padding-top: 144px;
+    padding-bottom: 144px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px none black;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: left;
+  }
 }
 
 /* FLEX del texto debajo de las fotos de los mas vendidos */
@@ -264,6 +451,17 @@ ul li p a {
   margin: 25px 0px 25px;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .ppal {
+    grid-area: ppal;
+    width: 100px;
+    justify-content: stretch;
+    align-content: center;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 50px;
+  }
+}
 
 /*Grilla de los adelantos de proximo ciclo lateral superior*/
 .superior {
@@ -273,6 +471,14 @@ ul li p a {
   margin: 25px 0px 25px;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .superior {
+    grid-area: superior;
+    width: 100%;
+    height: 2fr;
+    margin: 25px 0px 25px;
+  }
+}
 
 /*Grilla de los adelantos de proximo ciclo lateral inferior*/
 .inferior {
@@ -280,6 +486,23 @@ ul li p a {
   width: 100%;
   margin: 25px 0px 25px;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .inferior {
+    grid-area: inferior;
+    width: 100%;
+    margin: 15px 0px 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .proxciclo {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "ppal   superior" "ppal   inferior";
+    justify-content: space-around;
+  }
 }
 
 /* Tachado de la letra del precio anterior de las promociones y descuentos*/
@@ -294,10 +517,27 @@ ul li p a {
   color: rgb(0, 0, 0);
   margin-left: 5px;
 }
+@media (min-width: 501px) {
+  .direconta {
+    font-size: large;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+  }
+}
 
 /* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
 .linknatura {
   font-size: 2%;
+}
+@media (min-width: 501px) {
+  .linknatura {
+    font-size: large;
+  }
+}
+@media (min-width: 1024px) {
+  .linknatura {
+    font-size: large;
+  }
 }
 
 /* Flex correspondiente a los medios de contacto */
@@ -328,6 +568,44 @@ ul li p a {
   flex-wrap: wrap;
   padding-left: 5px;
 }
+@media (min-width: 501px) {
+  .grid__contactame {
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 5px;
+    background: linear-gradient(to left, orange, white);
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border: 2px solid orangered;
+    text-align: center;
+    background-color: white;
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .grid__contactame {
+    display: grid;
+    grid-template-columns: 15px 3fr 1fr 3fr 1fr;
+    grid-template-rows: 350px;
+    background: linear-gradient(to left, orange, white);
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border: 2px solid orangered;
+    text-align: center;
+    background-color: white;
+    flex-wrap: wrap;
+  }
+}
+
+/* Aumento el tamaño de la fuente de los enlaces de contacto*/
+@media (min-width: 501px) {
+  .enlacesgrandes {
+    font-size: x-large;
+  }
+}
 
 .quien {
   margin: 15px 37px 5px 37px;
@@ -351,6 +629,22 @@ ul li p a {
   padding-left: 50px;
   background-color: blanchedalmond;
 }
+@media (min-width: 1024px) {
+  .flex__soyyo {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    border: 2px solid orangered;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: blanchedalmond;
+    flex-wrap: nowrap;
+  }
+}
 
 /* Flex correspondiente al sector de presentacion de prodcutos de las descripciones de quien.html */
 .flex__presenta {
@@ -366,6 +660,22 @@ ul li p a {
   padding-right: 10px;
   padding-left: 10px;
   background-color: blanchedalmond;
+}
+@media (min-width: 1024px) {
+  .flex__presenta {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    border: 2px solid orangered;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: blanchedalmond;
+    flex-wrap: nowrap;
+  }
 }
 
 /* Flex correspondiente al sector capacitacion de las descripciones de quien.html */
@@ -383,6 +693,22 @@ ul li p a {
   padding-left: 10px;
   background-color: blanchedalmond;
 }
+@media (min-width: 1024px) {
+  .flex__capa {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    border: 2px solid orangered;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: blanchedalmond;
+    flex-wrap: nowrap;
+  }
+}
 
 .fotopremio {
   padding: 0px;
@@ -395,6 +721,12 @@ ul li p a {
 .ganadores {
   font-size: medium;
   color: black;
+}
+@media (min-width: 501px) {
+  .ganadores {
+    font-size: x-large;
+    color: black;
+  }
 }
 
 /* Area y letra correspondiente a los sorteos */
@@ -417,6 +749,16 @@ ul li p a {
   padding-left: 50px;
   padding-top: 20px;
   background-color: blanchedalmond;
+}
+@media (min-width: 501px) {
+  .flex__fechasorteo {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .flex__fechasorteo {
+    flex-direction: column;
+  }
 }
 
 /* tamaño de la letra del titulo de premio*/
@@ -443,6 +785,20 @@ ul li p a {
   background-color: blanchedalmond;
   margin-bottom: 50px;
 }
+@media (min-width: 1024px) {
+  .grid__pripre {
+    display: grid;
+    grid-template-columns: 5px 2fr 2fr 2fr 4fr 5px;
+    grid-template-rows: 350px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid orangered;
+    text-align: center;
+    background-color: blanchedalmond;
+    margin-bottom: 50px;
+  }
+}
 
 /* Configuracion del color del boton de COMPRAR del card de BS*/
 .btn-primary {
@@ -464,354 +820,4 @@ ul li p a {
 .carousel-slide {
   margin-top: 10px;
   margin-bottom: 175px;
-}
-
-/* --------------------------------------------------------------------------------------------------------------- */
-/*MODO TABLET!!!!!!!!!*/
-@media (min-width: 501px) {
-  /*MODO TABLET!!!!!!!!!*/
-  /*MODO TABLET!!!!!!!!!*/
-  nav ul {
-    list-style: none;
-    overflow: hidden;
-    align-items: center;
-  }
-  nav ul li {
-    float: left;
-    font-family: Quicksand;
-    font-size: 25px;
-    font-weight: 600;
-  }
-  .logotipo {
-    width: 475px;
-    height: 129px;
-  }
-  .ganadores {
-    font-size: larger;
-    color: black;
-  }
-  /* Tipo de letra de los encabezados/títulos */
-  .titles {
-    letter-spacing: 0.5cm;
-  }
-  .descripcionvideo {
-    background-color: coral;
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-    margin: 15px 0px 0px 0px;
-    border: 0px none black;
-  }
-  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  body {
-    text-align: center;
-    font-family: Quicksand;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* width: auto; */
-    max-width: 1023px;
-    margin: 0 auto;
-  }
-  .listfotos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .flex__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  /* Flex correspondiente al sector de las fechas de sorteo */
-  .flex__fechasorteo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-color: blanchedalmond;
-  }
-  .fotopubli {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-  .imglogo {
-    width: auto;
-    align-items: stretch;
-    text-align: right;
-  }
-  /* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
-  .linknatura {
-    font-size: large;
-  }
-  /* Ajusto el tamaño del video de Youtube al dispositivo */
-  .videoyoutube {
-    width: 695px;
-    height: 350px;
-  }
-  .ganadores {
-    font-size: x-large;
-    color: black;
-  }
-  .direconta {
-    font-size: large;
-    color: rgb(0, 0, 0);
-    margin-left: 10px;
-  }
-  .enlacesgrandes {
-    font-size: x-large;
-  }
-  .fotolanzamiento {
-    padding: 0px;
-    border: 5px ridge orangered;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
-    width: 60%;
-    height: 60%;
-  }
-  .fotolanzasecun {
-    padding: 0px;
-    border: 5px ridge orangered;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
-    width: 60%;
-    height: 60%;
-  }
-  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  .grid__contactame {
-    display: grid;
-    grid-template-columns: 10fr;
-    grid-template-rows: 5px;
-    background: linear-gradient(to left, orange, white);
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    background-color: white;
-    flex-wrap: wrap;
-    padding-left: 20px;
-  }
-  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR GRIDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-}
-/* --------------------------------------------------------------------------------------------------------------- */
-/*MODO DESKTOP!!!!!!!!!*/
-@media (min-width: 1024px) {
-  /*MODO DESKTOP!!!!!!!!!*/
-  /*MODO DESKTOP!!!!!!!!!*/
-  body {
-    background-color: white;
-    /* width: auto; */
-    max-width: 1920px;
-    margin: 0 auto;
-  }
-  nav {
-    float: left;
-  }
-  nav ul li {
-    float: left;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  nav ul li a {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  p {
-    font-family: Manrope;
-    font-weight: 500;
-    font-size: large;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .logotipo {
-    width: 475px;
-    height: 129px;
-  }
-  /* Ajusto el tamaño del video de Youtube al dispositivo */
-  .videoyoutube {
-    width: 560px;
-    height: 315px;
-  }
-  /* Tipo de letra de los encabezados/títulos */
-  .titles {
-    letter-spacing: 0.5cm;
-  }
-  .fotolanzamiento {
-    padding: 0px;
-    border: 5px ridge orangered;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
-    width: auto;
-    height: auto;
-  }
-  .fotolanzasecun {
-    padding: 0px;
-    border: 5px ridge orangered;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
-    width: auto;
-    height: auto;
-  }
-  .descripcionvideo {
-    background-color: coral;
-    text-align: center;
-    padding-top: 144px;
-    padding-bottom: 144px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin: 0px 0px 0px 0px;
-    border: 0px none black;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: left;
-  }
-  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR FLEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  .flex__header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .flex__soyyo {
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    padding-top: 0px;
-    margin-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-color: blanchedalmond;
-    flex-wrap: nowrap;
-  }
-  .flex__presenta {
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: blanchedalmond;
-    flex-wrap: nowrap;
-  }
-  .flex__capa {
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: blanchedalmond;
-    flex-wrap: nowrap;
-  }
-  /* Flex correspondiente al sector de las fechas de sorteo */
-  .flex__fechasorteo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    background-color: blanchedalmond;
-  }
-  .listfotos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-  .flex__caracte {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
-  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR FLEX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
-  #pie {
-    width: 75%;
-    height: 75%;
-  }
-  /* Configuro el tamaño de letra del enlace a la pagina de natura para que entre en el ancho de pantalla*/
-  .linknatura {
-    font-size: large;
-  }
-  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SECTOR GRIDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-  .grid__contactame {
-    display: grid;
-    grid-template-columns: 15px 3fr 1fr 3fr 1fr;
-    grid-template-rows: 350px;
-    background: linear-gradient(to left, orange, white);
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    background-color: white;
-    flex-wrap: wrap;
-  }
-  .grid__pripre {
-    display: grid;
-    grid-template-columns: 5px 2fr 2fr 2fr 4fr 5px;
-    grid-template-rows: 350px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 2px solid orangered;
-    text-align: center;
-    background-color: blanchedalmond;
-    margin-bottom: 50px;
-  }
-  .ppal {
-    grid-area: ppal;
-    width: 100px;
-    justify-content: stretch;
-    align-content: center;
-    align-items: center;
-    margin-left: 75px;
-    margin-top: 50px;
-  }
-  .superior {
-    grid-area: superior;
-    width: 100%;
-    height: 2fr;
-    margin: 25px 0px 25px;
-  }
-  .inferior {
-    grid-area: inferior;
-    width: 100%;
-    margin: 15px 0px 25px;
-  }
-  .proxciclo {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "ppal   superior" "ppal   inferior";
-    justify-content: space-around;
-  }
-  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTOR GRIDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 }/*# sourceMappingURL=estilos.css.map */
