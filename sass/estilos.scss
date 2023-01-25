@@ -10,16 +10,16 @@
 
 /* Configuracion del color del boton de COMPRAR del card de BS*/
 .btn-primary {
-    background-color: coral;
-    border-color: brown;
+    background-color: $colorbotonsinselect;
+    border-color: $bordecolorsinselect;
     color: black;
     font-weight: bold;
 }
 
 /* Configuracion del color del boton de COMPRAR del card de BS*/
 .btn-primary:hover {
-    background-color: palegreen;
-    border-color: crimson;
+    background-color: $colorbotonseleccionado;
+    border-color: $bordecolorseleccionado;
     color: black;
     font-weight: bold;
 }

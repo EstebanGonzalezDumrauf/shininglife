@@ -77,7 +77,7 @@
     border: 0px none black;
 
     @media (min-width: 501px) {
-        background-color: coral;
+        background-color: $colordescvideo;
         text-align: center;
         padding: 15px 0px 15px 0px;
         margin: 15px 0px 0px 0px;
@@ -85,7 +85,7 @@
     }
 
     @media (min-width:1024px) {
-        background-color: coral;
+        background-color: $colordescvideo;
         text-align: center;
         padding-top: 144px;
         padding-bottom: 144px;
