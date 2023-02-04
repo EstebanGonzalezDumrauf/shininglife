@@ -87,8 +87,13 @@ ul {
 
 /*Dimensiones del logo de la navbar*/
 .logotipo {
-    width: 284px;
-    height: 78px;
+    width: 260px;
+    height: 70px;
+
+    @media (min-width:400px){
+        width: 284px;
+        height: 78px;  
+    }
 
     @media (min-width:501px){
         width: 712px;
