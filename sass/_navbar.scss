@@ -44,14 +44,14 @@ nav {
             }
 
             a {
-                display: inline-block;
-                padding: 6px;
+                display: block;
+                padding: 10px;
                 color: $colorletranavbar;
                 text-decoration: none;
 
 
                 @media (min-width:1024px) {
-                    display: inline-block;
+                    display: block;
                     padding: 15px;
                     color: rgb(0, 0, 0);
                     text-decoration: none;

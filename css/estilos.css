@@ -360,14 +360,14 @@ nav ul li {
   }
 }
 nav ul li a {
-  display: inline-block;
-  padding: 6px;
+  display: block;
+  padding: 10px;
   color: black;
   text-decoration: none;
 }
 @media (min-width: 1024px) {
   nav ul li a {
-    display: inline-block;
+    display: block;
     padding: 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -693,7 +693,7 @@ ul li p a {
 }
 
 .quien {
-  margin: 15px 37px 5px 37px;
+  margin: 10px 37px 5px 37px;
   padding: 0px;
   border: 2px solid grey;
   border-radius: 3%;
@@ -709,6 +709,7 @@ ul li p a {
   border: 2px solid orangered;
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 5px;
   margin-bottom: 50px;
   padding-right: 50px;
   padding-left: 50px;
@@ -742,6 +743,7 @@ ul li p a {
   text-align: center;
   margin-bottom: 50px;
   padding-top: 15px;
+  padding-bottom: 5px;
   padding-right: 10px;
   padding-left: 10px;
   background-color: blanchedalmond;
@@ -774,6 +776,7 @@ ul li p a {
   text-align: center;
   margin-bottom: 50px;
   padding-top: 15px;
+  padding-bottom: 5px;
   padding-right: 10px;
   padding-left: 10px;
   background-color: blanchedalmond;
@@ -824,6 +827,7 @@ ul li p a {
 /* Flex correspondiente al sector de las fechas de sorteo */
 .flex__fechasorteo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -838,11 +842,13 @@ ul li p a {
 @media (min-width: 501px) {
   .flex__fechasorteo {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 1024px) {
   .flex__fechasorteo {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 
@@ -860,7 +866,7 @@ ul li p a {
 /*Grilla de primer y segundo premio*/
 .grid__pripre {
   display: grid;
-  grid-template-columns: 500px;
+  grid-template-columns: 400px;
   grid-template-rows: 15px;
   justify-content: center;
   align-content: center;
@@ -909,4 +915,8 @@ ul li p a {
 
 .row {
   justify-content: center;
+}
+
+.card {
+  background-color: floralwhite;
 }/*# sourceMappingURL=estilos.css.map */

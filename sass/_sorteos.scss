@@ -26,6 +26,7 @@
 /* Flex correspondiente al sector de las fechas de sorteo */
 .flex__fechasorteo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -40,6 +41,7 @@
     @media (min-width: 501px) {
         // display: flex;
         flex-direction: column;
+        flex-wrap: nowrap
         // justify-content: center;
         // align-content: center;
         // align-items: center;
@@ -53,6 +55,7 @@
 
     @media (min-width:1024px) {
         flex-direction: column;
+        flex-wrap: nowrap
     }
 }
 
@@ -70,7 +73,7 @@
 /*Grilla de primer y segundo premio*/
 .grid__pripre {
     display: grid;
-    grid-template-columns: 500px;
+    grid-template-columns: 400px;
     grid-template-rows: 15px;
     justify-content: center;
     align-content: center;
